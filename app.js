@@ -265,9 +265,9 @@ app.post('/generate-and-email-pdf', authenticate, async (req, res) => {
     const page = pdfDoc.getPages()[0];
 
     // Add text to specific places on the PDF
-    page.drawText(name, { x: 100, y: 400, size: 12, color: rgb(0, 0, 0) });
-    page.drawText(uni, { x: 100, y: 300, size: 12, color: rgb(0, 0, 0) });
-    page.drawText(sport, { x: 100, y: 200, size: 12, color: rgb(0, 0, 0) });
+    page.drawText(name, { x: 800, y: 815, size: 34, color: rgb(0, 0, 0) });
+    page.drawText(uni, { x: 600, y: 710, size: 34, color: rgb(0, 0, 0) });
+    page.drawText(sport, { x: 600, y: 605, size: 34, color: rgb(0, 0, 0) });
 
     const pdfBytes = await pdfDoc.save();
 
